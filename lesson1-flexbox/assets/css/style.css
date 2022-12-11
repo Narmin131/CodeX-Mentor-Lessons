@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-box{
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    /* padding: 40px; */
+    /* margin: 50px; */
+    margin: 10px 20px 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content:flex-end ;
+    align-items:center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    padding: 30px;
+    margin: 5px;
+}
+
+h2{
+    color: #fff;
+}
