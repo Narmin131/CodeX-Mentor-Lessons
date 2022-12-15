@@ -1,0 +1,12 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: burlywood;
+    // @include between();
+    .box{
+        width: 100%;
+        height: 100%;
+        background-color: $headerColor;
+        
+    }
+}
