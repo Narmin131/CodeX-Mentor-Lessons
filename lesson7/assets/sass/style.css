@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 12vh;
+  background-color: bisque;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .mainul {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .mainul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+nav .mainul .myfirstLi {
+  position: relative;
+}
+nav .mainul .myfirstLi:hover .secondUl {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-30px);
+}
+nav .mainul .myfirstLi .secondUl {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.bootstrap {
+  width: 100%;
+  height: 50vh;
+}
+.bootstrap .box {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
