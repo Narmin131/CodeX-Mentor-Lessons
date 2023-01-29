@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 70vh;
+    background-color: cadetblue;
+
+    .box {
+        width: 300px;
+        height: 100%;
+        background-color: bisque;
+        border: 2px solid red;
+
+        .box-img {
+            width: 100%;
+            height: 35%;
+            &:hover{
+                img{
+                    opacity: .4;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .3s ease;
+                cursor: pointer;
+            }
+        }
+
+        .box-name {
+            width: 100%;
+            height: 10%;
+            background-color: darkolivegreen;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+
+        .box-text {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid red;
+
+            h2,
+            p {
+                text-align: center;
+            }
+        }
+
+        .box-bottom-icons {
+            background-color: coral;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icon {
+                width: 33%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+
+        }
+    }
+}
+
+.line{
+    width: 1px ;
+    height: 100%;
+    background-color: grey;
+    height: auto;
+    
+}

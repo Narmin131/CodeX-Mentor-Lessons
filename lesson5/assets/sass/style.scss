@@ -1,0 +1,27 @@
+@import 'mixin.scss';
+
+
+h2{
+    color: red;
+}
+
+.myContent{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    @include center;
+    .inline-div{
+        width: 10px;
+        height: 10px;
+        background-color: black;
+    }
+}
+
+
+
+
+p{
+    &:nth-child(6){
+        color: red;
+    }
+}

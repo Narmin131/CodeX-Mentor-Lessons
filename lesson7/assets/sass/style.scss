@@ -1,20 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-nav {
+header {
     width: 100%;
-    height: 12vh;
-    background-color: bisque;
-    padding: 16px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 13vh;
+    background-color: #FDFDFD;
 
-    .mainul {
-        width: 50%;
+    .logo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40%;
+            height: auto;
+        }
+    }
+
+    ul {
+        width: 70%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -22,40 +25,103 @@ nav {
 
         li {
             list-style-type: none;
-            cursor: pointer; 
-        }
-
-        .myfirstLi{
+            transition: all .3s ease;
             position: relative;
-            &:hover{
-                .secondUl{
-                    opacity: 1;
-                    visibility: visible;
-                    transform: translateY(-30px);
-                }
-            }
-             .secondUl{
+
+            // border-bottom: 2px solid #fff;
+            // cursor: pointer;
+            // &:hover{
+            //     border-color: blue;
+            // }
+            &::before {
+                content: '';
+                width: 0;
+                height: 4px;
+                top: 30px;
                 position: absolute;
-                top: 50px;
                 left: 0;
-                width: 100px;
-                height: 100px;
-                background-color: antiquewhite;
-                opacity: 0;
-                visibility: hidden;
-                transition: all .3s ease;
+                background-color: #273272;
+                transition: all .6s ease;
+            }
+
+            &:hover{
+                &::before{
+                    width: 75px;
+                }
             }
         }
     }
 }
 
 
-.bootstrap{
+section{
     width: 100%;
-    height: 50vh;
+    height: auto;
+    background-image: url('../img/service-bg-01.webp');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 20px;
+    .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
     .box{
         width: 100%;
         height: 100%;
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+        h1{
+            color: #273272;
+            font-size: 23px;
+            line-height: 1.6;
+        }
+        p{
+            line-height: 1.7;
+        }
+    }
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #273272;
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    .myUl{
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    ul {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:576px) {
+    .logo {
+        img {
+            width: 20% !important;
+        }
     }
 }

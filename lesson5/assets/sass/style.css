@@ -1,0 +1,21 @@
+h2 {
+  color: red;
+}
+
+.myContent {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myContent .inline-div {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+p:nth-child(6) {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -1,24 +1,38 @@
-// var 
-// let
-// const 
+let a = 90;
 
-const myArray = [
-    {
-      user:'Narmin'
-    },
-    {
-      user:'Fatime'
-    }
-]
-
-let a = 6;
-
-if( a !== 5) {
-    document.write('6 5den ferqlidir')
+if(a > 60){
+    console.log('a 60dan boyukdur');
+}
+else if(a=== 60){
+    console.log('60 90 a beraberdir');
 }
 else{
-    document.write('a 5 den kicikdir')
+    console.log("60 dan kicikdir");
 }
 
 
+var myObject = {
+    name : 'Narmin',
+    surname : "Mammadova",
+    age: 19
+}
 
+// console.log(myObject.name);
+
+var myArray = ['Narmin', 'Mammadova', 20, 'Kamran', 'Aytac']
+
+console.log(myArray[0]);
+
+
+// for(i=0;i<10;i++){
+//     console.log(i);
+// }
+
+// for(a=0 ; a < myArray.length ; a++){
+//     console.log(myArray[a]);
+// }
+
+// myArray.forEach((element => console.log(element)))
+
+// alert('Salam')
+// prompt('salam')
