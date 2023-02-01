@@ -1,0 +1,38 @@
+*{
+    overflow-x: hidden;
+}
+
+.menu{
+    width: 300px;
+    height: 100vh;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: all .3s ease;
+}
+
+h1::after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    display: inline-block;
+    opacity: 0;
+}
+
+
+h1{
+    &::before{
+        content: '';
+    }
+}
+
+h1{
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+}
