@@ -1,0 +1,32 @@
+.light {
+  --headerBg: bisque;
+  --textColor: blue;
+  --mainSection: red;
+}
+
+.dark {
+  --headerBg: black;
+  --textColor: white;
+  --mainSection: rgb(30, 142, 133);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 14vh;
+  background-color: var(--headerBg);
+}
+header h2 {
+  color: var(--textColor);
+}
+
+.main-section {
+  width: 100%;
+  height: 40vh;
+  background-color: var(--mainSection);
+}/*# sourceMappingURL=style.css.map */
